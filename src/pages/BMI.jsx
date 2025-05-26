@@ -10,7 +10,7 @@ function BMI() {
 
   handleBMITitle();
   return (
-    <section className="signin-section w-full flex justify-center">
+    <section className="signin-section w-full flex justify-center h-[80vh]">
       <div className="flex flex-col my-5 lg:flex-row lg:my-0 justify-center items-center w-[80%]">
         <div className="form bg-[#f9f9f9] m-3 p-4 rounded-2xl flex flex-col items-center gap-3 w-[80%] lg:w-[50%]">
           <h1 className="text-2xl font-bold">Calc BMI</h1>
@@ -45,13 +45,23 @@ function BMI() {
           <div>
             <h1>
               {BMI <= 18.4 ? (
-                <h1 className="bg-red-400">Underweight</h1>
+                <>
+                  <h1 className="bg-red-400 p-5 rounded-xl text-white font-bold">
+                    Underweight
+                  </h1>
+                </>
               ) : BMI > 18.5 && BMI < 24.9 ? (
-                <h1 className="bg-green-400">Normal</h1>
+                <h1 className="bg-green-400 p-5 rounded-xl text-white font-bold">
+                  Normal
+                </h1>
               ) : BMI > 25 && BMI < 39.9 ? (
-                <h1 className="bg-yellow-400">Overweight</h1>
+                <h1 className="bg-yellow-400 p-5 rounded-xl text-white font-bold">
+                  Overweight
+                </h1>
               ) : BMI >= 40 ? (
-                <h1 className="bg-red-400">Obese</h1>
+                <h1 className="bg-red-400 p-5 rounded-xl text-white font-bold">
+                  Obese
+                </h1>
               ) : (
                 ""
               )}
