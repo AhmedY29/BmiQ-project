@@ -27,7 +27,7 @@ function Navbar() {
             </Link>
             <Link
               className="opacity-65 hover:opacity-100 transition-all duration-150"
-              to={"/about"}
+              to={"/"}
             >
               <li>About</li>
             </Link>
